@@ -1,0 +1,92 @@
+#root {
+  margin: 0;
+}
+
+.brand-name {
+  height: 10%;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  align-self: center;
+}
+
+.home-section {
+  height: 100%;
+}
+
+.home-photo {
+  height: 100%;
+  max-height: 100dvh;
+  width: auto;
+  justify-self: center;
+  z-index: 0;
+}
+
+.home-section {
+  display: grid;
+}
+
+.gallery-section {
+  display: grid;
+}
+
+.gallery-section>* {
+  grid-area: 1/1;
+  height: 100vh;
+}
+
+.home-section>* {
+  grid-area: 1/1;
+}
+
+.gallery-container {
+  height: 100%;
+  width: 100%;
+}
+
+.gallery-container {
+  column-count: 3;
+
+  column-gap: 10px;
+  row-gap: 20px;
+
+  width: 90%;
+  margin: 20px auto;
+}
+
+.gallery-container>img {
+  display: block;
+  height: auto;
+  width: 100%;
+  margin: 20px 0;
+  justify-self: center;
+}
+
+@media (max-width: 768px) {
+  .gallery-container>img {
+    width: 100%;
+  }
+
+  .gallery-container {
+    column-count: 2;
+    margin: 0 auto;
+  }
+
+  .gallery-container>img:nth-child(2) {
+    /* Natera četvrtu sliku da zauzme prostor 3 reda */
+    margin-top: 0;
+  }
+
+  section {
+    height: 100%;
+  }
+
+  .gallery-container {
+    height: 100%;
+  }
+
+  .home-photo {
+    height: 100%;
+    width: 100%;
+  }
+}
