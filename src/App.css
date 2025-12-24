@@ -13,11 +13,18 @@ main.show {
 }
 
 .brand-name {
-  height: 10%;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  align-self: center;
+  z-index: 100;
+}
+
+.brand-name>h1 {
   text-align: center;
+  font-size: 7em;
   z-index: 1;
   color: white;
-  align-self: center;
 }
 
 .home-section {
@@ -66,6 +73,14 @@ main.show {
   margin: 20px auto;
 }
 
+.text {
+  margin: 0 10%;
+}
+
+p {
+  margin: 10px 10%;
+}
+
 .gallery-container>img {
   display: block;
   height: auto;
@@ -77,6 +92,10 @@ main.show {
 @media (max-width: 768px) {
   .gallery-container>img {
     width: 100%;
+  }
+
+  .brand-name>h1 {
+    font-size: 3em;
   }
 
   .gallery-container {
