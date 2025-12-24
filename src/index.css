@@ -14,8 +14,8 @@
 }
 
 a {
-  font-weight: 1000;
-  color: white;
+  font-weight: inherit;
+  color: inherit;
   text-decoration: inherit;
 }
 

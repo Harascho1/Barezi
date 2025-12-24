@@ -1,7 +1,7 @@
 .spin-90 {
 	width: 100%;
 	height: 100px;
-	animation: spin-unhover 1s linear;
+	animation: spin-unhover 2s linear;
 
 	z-index: 100;
 	transform: rotate(var(--ugao));
