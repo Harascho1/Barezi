@@ -1,31 +1,20 @@
 .spin-90 {
 	width: 100%;
 	height: 100px;
-	animation: spin-unhover 2s linear;
 
+	transform-origin: 39% 50%;
 	z-index: 100;
-	transform: rotate(var(--ugao));
+	transform: rotate(0deg);
+	transition: transform 1s ease-out;
+}
+
+.spin-90:hover {
+	transform: rotate(-100deg);
 }
 
 .spin-90-container {
 	display: flex;
 	align-items: center;
-}
-
-@property --ugao {
-	syntax: '<angle>';
-	initial-value: 0deg;
-	inherits: true;
-}
-
-@keyframes spin-unhover {
-	0% {
-		--ugao: -100deg;
-	}
-
-	100% {
-		--ugao: 0deg;
-	}
 }
 
 @media (max-width: 768px) {
