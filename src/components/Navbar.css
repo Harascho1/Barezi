@@ -21,15 +21,19 @@
   height: 100%;
   width: 80%;
   margin: 0;
-  padding: 0;
-  background: #00000077;
+  padding: 10px;
+  background: #000000CF;
   border-radius: 0 0 50px 50px;
 }
 
 .navbar>ul>li {
   font-size: 4vw;
   cursor: pointer;
-  font-weight: 100;
+  font-weight: 200;
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .navbar>ul {
+    padding: 0;
+  }
+}
