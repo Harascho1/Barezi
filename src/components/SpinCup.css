@@ -1,6 +1,6 @@
 .spin-90 {
 	width: 100%;
-	height: 100px;
+	height: 10vw;
 
 	transform-origin: 39% 50%;
 	z-index: 100;
@@ -15,10 +15,4 @@
 .spin-90-container {
 	display: flex;
 	align-items: center;
-}
-
-@media (max-width: 768px) {
-	.spin-90 {
-		height: 50px;
-	}
 }

@@ -58,10 +58,8 @@ function App() {
         <nav className="navbar">
           <ul>
             <li onClick={() => scrollToSection(homeRef)}>Home</li>
+            <li onClick={() => scrollToSection(menuRef)}>Cenovnik</li>
             <li onClick={() => scrollToSection(galleryRef)}>Galerija</li>
-            <li onClick={() => scrollToSection(menuRef)}>
-              <a href="https://app.emeni.rs/1435">Cenovnik</a>
-            </li>
             <li onClick={() => scrollToSection(aboutUsRef)}>O nama</li>
           </ul>
         </nav>
@@ -77,6 +75,26 @@ function App() {
               <h1>Bar Barezi</h1>
               <Spin90 img={Cup} />
             </div>
+          </section>
+
+          <section
+            ref={menuRef}
+            style={{
+              background: "#000000",
+              paddingTop: "60px",
+              padding: "60px 20px 10px 20px",
+            }}
+          >
+            <h1 style={{ textAlign: "center", fontWeight: "100" }}>
+              Nas cenovnik mozete pogledati na ovom{" "}
+              <a
+                href="https://app.emeni.rs/1435"
+                style={{ color: "sandybrown" }}
+              >
+                linku
+              </a>
+              .
+            </h1>
           </section>
 
           <section
